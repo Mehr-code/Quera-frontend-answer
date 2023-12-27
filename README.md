@@ -16,4 +16,10 @@
     <td><a href="https://quera.org/problemset/33043">سوال</a></td>
     <td><a href="https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/33043.html">جواب</a></td>
   </tr>
+  <tr>
+    <td>109570</td>
+    <td>اسنپ شاپ</td>
+    <td><a href="https://quera.org/problemset/109570">سوال</a></td>
+    <td><a href="https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/Quera_SnappShop.rar">جواب</a></td>
+  </tr>
 </table>
