@@ -14,6 +14,6 @@
     <td>33043</td>
     <td>صفحه پاسخگو</td>
     <td><a href="https://quera.org/problemset/33043">سوال</a></td>
-    <td><a href="https://github.com/Mehr-code/Quera-js-answers/blob/main/SRC/3537.js">جواب</a></td>
+    <td><a href="https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/33043.html">جواب</a></td>
   </tr>
 </table>
