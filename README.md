@@ -22,4 +22,10 @@
     <td><a href="https://quera.org/problemset/109570">سوال</a></td>
     <td><a href="https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/Quera_SnappShop.rar">جواب</a></td>
   </tr>
+  <tr>
+    <td>66543</td>
+    <td>انتخاب کننده تودرتو</td>
+    <td><a href='https://quera.org/problemset/66543'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66543.css'>جواب</a></td>
+  </tr>
 </table>
