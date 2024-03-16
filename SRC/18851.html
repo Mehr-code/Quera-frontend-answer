@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3.css" />
+  <style>
+    .central {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+    }
+  </style>
+  <body>
+    <form class="w3-container w3-card-4 w3-pale-green central">
+      <h2>Desired Input</h2>
+
+      <p>
+        <input
+          class="w3-input w3-border"
+          type="number"
+          id="number_input"
+          placeholder="Enter a number between 1 and 1000!"
+          oninput="desiredInput()"
+        />
+      </p>
+    </form>
+    <script>
+      const input = document.querySelector("#number_input");
+      input.addEventListener("input", function () {
+        const num = input.value;
+        if ((num < 1 || num > 1000) && num !== "") {
+          input.style.backgroundColor = "#F5B7B1";
+        } else {
+          input.style.backgroundColor = "white";
+        }
+      });
+    </script>
+  </body>
+</html>
