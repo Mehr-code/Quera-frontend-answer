@@ -41,4 +41,11 @@
     <td><a href='https://quera.org/problemset/18851'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/18851.html'>جواب</a></td>
   </tr>
+  
+   <tr>
+    <td>33488</td>
+    <td>عکس تار</td>
+    <td><a href='https://quera.org/problemset/33488'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/33488.html'>جواب</a></td>
+  </tr>
 </table>
