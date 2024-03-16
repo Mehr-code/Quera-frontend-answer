@@ -28,4 +28,10 @@
     <td><a href='https://quera.org/problemset/66543'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66543.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>49606</td>
+    <td>background color switch</td>
+    <td><a href='https://quera.org/problemset/49606'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66543.css'>جواب</a></td>
+  </tr>
 </table>
