@@ -48,4 +48,11 @@
     <td><a href='https://quera.org/problemset/33488'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/33488.html'>جواب</a></td>
   </tr>
+  
+   <tr>
+    <td>21220</td>
+    <td>خالی های رنگی</td>
+    <td><a href='https://quera.org/problemset/21220'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/21220.css'>جواب</a></td>
+  </tr>
 </table>
