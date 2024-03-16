@@ -34,4 +34,11 @@
     <td><a href='https://quera.org/problemset/49606'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/49606.js'>جواب</a></td>
   </tr>
+  
+  <tr>
+    <td>18851</td>
+    <td>ورودی مطلوب</td>
+    <td><a href='https://quera.org/problemset/18851'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/18851.html'>جواب</a></td>
+  </tr>
 </table>
