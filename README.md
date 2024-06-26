@@ -69,4 +69,12 @@
     <td><a href='https://quera.org/problemset/134351'>سوال</a></td>
     <td><a href=''>جواب</a></td>
   </tr>
+  <tr>
+    <td>66548</td>
+    <td>محصولات</td>
+    <td><a href='https://quera.org/problemset/66548'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66548.js'>جواب</a></td>
+  </tr>
+  
+ 
 </table>
