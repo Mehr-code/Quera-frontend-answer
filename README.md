@@ -75,6 +75,12 @@
     <td><a href='https://quera.org/problemset/66548'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66548.js'>جواب</a></td>
   </tr>
+  <tr>
+    <td>132260</td>
+    <td>سلام کدکاپ</td>
+    <td><a href='https://quera.org/problemset/132260'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/66548.js'>جواب</a></td>
+  </tr>
   
  
 </table>
