@@ -57,10 +57,10 @@
   </tr>
   
    <tr>
-    <td>134351</td>
-    <td>رنج قیمت مفید</td>
-    <td><a href='https://quera.org/problemset/134351'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/134351.html'>جواب</a></td>
+    <td>15688</td>
+    <td>دوزیستان ناکام</td>
+    <td><a href='https://quera.org/problemset/15688'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15688.html'>جواب</a></td>
   </tr>
 
   <tr>
