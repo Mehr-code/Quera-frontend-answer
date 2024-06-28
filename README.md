@@ -97,7 +97,7 @@
     <td>182260</td>
     <td>I ❤ Mockstar</td>
     <td><a href='https://quera.org/problemset/182260'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/68275.css'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182260.css'>جواب</a></td>
   </tr>
   
  
