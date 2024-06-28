@@ -87,6 +87,12 @@
     <td><a href='https://quera.org/problemset/21221'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/21221.js'>جواب</a></td>
   </tr>
+   <tr>
+    <td>68275</td>
+    <td>وسط قرار دادن المان</td>
+    <td><a href='https://quera.org/problemset/68275'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/21221.js'>جواب</a></td>
+  </tr>
   
  
 </table>
