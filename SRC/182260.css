@@ -1,0 +1,22 @@
+@import url("static.css");
+html {
+  font-family: "Merienda";
+}
+body {
+  background-color: var(--color--body-background);
+  color: var(--color--body-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 4.8rem;
+}
+.heart {
+  color: transparent;
+  &:hover {
+    color: var(--color--heart-foreground--hover);
+  }
+}
