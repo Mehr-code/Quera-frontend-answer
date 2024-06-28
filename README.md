@@ -81,6 +81,12 @@
     <td><a href='https://quera.org/problemset/132260'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132260.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>21221</td>
+    <td>عکس غیبی</td>
+    <td><a href='https://quera.org/problemset/21221'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132260.css'>جواب</a></td>
+  </tr>
   
  
 </table>
