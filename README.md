@@ -123,6 +123,12 @@
     <td><a href='https://quera.org/problemset/182542'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182542.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>82518</td>
+    <td>مارپیچ</td>
+    <td><a href='https://quera.org/problemset/82518'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/82518.css'>جواب</a></td>
+  </tr>
 
  
 </table>
