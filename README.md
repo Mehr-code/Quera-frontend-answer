@@ -121,7 +121,7 @@
     <td>182542</td>
     <td>نوبار</td>
     <td><a href='https://quera.org/problemset/182542'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/tree/main/SRC/98448'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182542.css'>جواب</a></td>
   </tr>
 
  
