@@ -111,6 +111,12 @@
     <td><a href='https://quera.org/problemset/15689'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15689.js'>جواب</a></td>
   </tr>
-  
+  <tr>
+    <td>98448</td>
+    <td>بله</td>
+    <td><a href='https://quera.org/problemset/98448'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/tree/main/SRC/98448'>جواب</a></td>
+  </tr>
+
  
 </table>
