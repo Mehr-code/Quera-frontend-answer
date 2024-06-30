@@ -105,6 +105,12 @@
     <td><a href='https://quera.org/problemset/66544'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182260.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>15689</td>
+    <td>نمایش رنگ ها</td>
+    <td><a href='https://quera.org/problemset/15689'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182260.css'>جواب</a></td>
+  </tr>
   
  
 </table>
