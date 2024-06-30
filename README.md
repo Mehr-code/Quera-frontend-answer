@@ -117,6 +117,12 @@
     <td><a href='https://quera.org/problemset/98448'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/tree/main/SRC/98448'>جواب</a></td>
   </tr>
+  <tr>
+    <td>182542</td>
+    <td>نوبار</td>
+    <td><a href='https://quera.org/problemset/182542'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/tree/main/SRC/98448'>جواب</a></td>
+  </tr>
 
  
 </table>
