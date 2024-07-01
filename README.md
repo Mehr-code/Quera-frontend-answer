@@ -133,7 +133,7 @@
     <td>15681</td>
     <td>دیدگاه ساده</td>
     <td><a href='https://quera.org/problemset/15681'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/82518.css'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15681.js'>جواب</a></td>
   </tr>
 
 
