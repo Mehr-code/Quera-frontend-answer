@@ -136,6 +136,11 @@
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15681.js'>جواب</a></td>
   </tr>
 
-
+<tr>
+    <td>15682</td>
+    <td>جابجایی ساده</td>
+    <td><a href='https://quera.org/problemset/15682'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15682.js'>جواب</a></td>
+  </tr>
  
 </table>
