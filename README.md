@@ -147,7 +147,7 @@
     <td>18852</td>
     <td>حلقه های مربعی</td>
     <td><a href='https://quera.org/problemset/18852'>سوال</a></td>
-    <td><a href=''>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/18852.css'>جواب</a></td>
   </tr>
    <tr>
     <td>132241</td>
