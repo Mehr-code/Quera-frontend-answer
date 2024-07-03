@@ -153,6 +153,6 @@
     <td>132241</td>
     <td>چنتا نقطه داره؟</td>
     <td><a href='https://quera.org/problemset/132241'>سوال</a></td>
-    <td><a href='https://quera.org/problemset/18852'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132241.js'>جواب</a></td>
   </tr>
 </table>
