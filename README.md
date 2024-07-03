@@ -149,4 +149,10 @@
     <td><a href='https://quera.org/problemset/15682'>سوال</a></td>
     <td><a href='https://quera.org/problemset/18852'>جواب</a></td>
   </tr>
+   <tr>
+    <td>132241</td>
+    <td>چنتا نقطه داره؟</td>
+    <td><a href='https://quera.org/problemset/132241'>سوال</a></td>
+    <td><a href='https://quera.org/problemset/18852'>جواب</a></td>
+  </tr>
 </table>
