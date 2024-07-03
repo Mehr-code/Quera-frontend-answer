@@ -146,8 +146,8 @@
  <tr>
     <td>18852</td>
     <td>حلقه های مربعی</td>
-    <td><a href='https://quera.org/problemset/15682'>سوال</a></td>
-    <td><a href='https://quera.org/problemset/18852'>جواب</a></td>
+    <td><a href='https://quera.org/problemset/18852'>سوال</a></td>
+    <td><a href=''>جواب</a></td>
   </tr>
    <tr>
     <td>132241</td>
