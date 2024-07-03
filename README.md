@@ -142,5 +142,11 @@
     <td><a href='https://quera.org/problemset/15682'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15682.js'>جواب</a></td>
   </tr>
- 
+  
+ <tr>
+    <td>18852</td>
+    <td>حلقه های مربعی</td>
+    <td><a href='https://quera.org/problemset/15682'>سوال</a></td>
+    <td><a href='https://quera.org/problemset/18852'>جواب</a></td>
+  </tr>
 </table>
