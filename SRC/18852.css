@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+#container {
+  width: 400px;
+  height: 400px;
+  background-color: #d5d8dc;
+  margin: 100px 0 0 100px;
+  position: relative;
+}
+.right {
+  background-color: #2ecc71;
+  z-index: 1;
+}
+.left {
+  background-color: #e74c3c;
+  z-index: 1;
+}
+.right:first-child {
+  height: 10%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+}
+.right:nth-child(2) {
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  right: 0;
+}
+.right:nth-child(3) {
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  left: 20%;
+  z-index: 2;
+}
+.right:nth-child(4) {
+  height: 10%;
+  width: 80%;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+}
+
+.left:nth-child(8) {
+  height: 10%;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.left:nth-child(6) {
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.left:nth-child(7) {
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.left:nth-child(5) {
+  height: 10%;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.right:hover ~ .right,
+.right:hover {
+  z-index: 2;
+}
+
+.left:hover ~ .left,
+.left:hover {
+  z-index: 2;
+}
