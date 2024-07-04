@@ -155,4 +155,10 @@
     <td><a href='https://quera.org/problemset/132241'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132241.js'>جواب</a></td>
   </tr>
+  <tr>
+    <td>82519</td>
+    <td>جابه جایی آرایه</td>
+    <td><a href='https://quera.org/problemset/82519'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132241.js'>جواب</a></td>
+  </tr>
 </table>
