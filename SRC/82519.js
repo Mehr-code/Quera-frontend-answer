@@ -12,6 +12,8 @@ let numbers = [4, 6, 10, 23, 0, 24, 30, 2];
 // فضایی که قراره اعداد در قالب اِسپن قرار بگیره
 const numbersContainer = document.getElementById("numbers-container");
 
+const errorMsg = document.getElementById("error-container");
+
 // تابع ای برای ساختن لیست اعداد در تگ اِسپن
 function creatSpan(numbers) {
   numbers.forEach((el) => {
@@ -21,6 +23,13 @@ function creatSpan(numbers) {
   });
 }
 
+// تابع برای نمایش ارور ها
+function showError(msg) {
+  const pElement = document.createElement("p");
+  pElement.textContent = `${msg}`;
+  pElement.id = "error";
+  errorMsg.appendChild(pElement);
+}
 // تابع برای اینکه بفهمم جهت جا به جایی کدام سمت است
 function whichDirection() {
   // انتخاب تمام رادیو باتن ها
@@ -40,6 +49,10 @@ function whichDirection() {
 // تابع جا به جایی اعداد
 function swappingNumbers(item, count) {
   let index = numbers.indexOf(Number(item));
+  if (index + Number(count) > numbers.length - 1) {
+    showError(ERROR_TYPE.NOT_POSSIBLE);
+    return;
+  }
   for (let i = 0; i < count; i++) {
     const temp = numbers[index + 1];
     numbers[index + 1] = numbers[index];
@@ -58,8 +71,16 @@ function func1() {
   const item = document.getElementById("item-input").value;
   // چقد جا به جا بشه
   const count = document.getElementById("count-input").value;
-  // در کدام جهت جا به جا کنیم
+  errorMsg.innerText = "";
+  if (item === "" || count === "") {
+    showError(ERROR_TYPE.INVALID_INPUT);
+    return;
+  } else if (!numbers.includes(Number(item))) {
+    showError(ERROR_TYPE.NOT_FOUND);
+    return;
+  }
   if (whichDirection()) {
+    // در کدام جهت جا به جا کنیم
     numbers = numbers.reverse();
 
     // فراخواندن تابع جا به جایی
