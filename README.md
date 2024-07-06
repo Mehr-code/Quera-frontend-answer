@@ -161,4 +161,11 @@
     <td><a href='https://quera.org/problemset/82519'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/82519.js'>جواب</a></td>
   </tr>
+  <tr>
+    <td>15683</td>
+    <td>ماشین حساب ساده</td>
+    <td><a href='https://quera.org/problemset/15683'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15683.css'>جواب</a></td>
+  </tr>
+  
 </table>
