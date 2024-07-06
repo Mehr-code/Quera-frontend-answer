@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "DigitalNumbers";
+  src: url(./DigitalNumbers.woff);
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(./RobotoCondensed.woff);
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app {
+  min-height: 280px;
+  height: 70%;
+  max-width: 580px;
+  width: 80%;
+}
+.key {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result {
+  height: 28%;
+  width: 100%;
+  background-color: #eee;
+  font-family: "DigitalNumbers";
+  text-align: right;
+  font-size: 3.5em;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#keypad {
+  height: 72%;
+  width: 100%;
+  color: #ddd;
+  font-family: "RobotoCondensed";
+  display: flex;
+  flex-flow: row;
+}
+#nums {
+  height: 100%;
+  width: 54%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#nums .key:nth-child(odd) {
+  background-color: #19676e;
+}
+#nums .key:nth-child(even) {
+  background-color: #095057;
+}
+#ops {
+  height: 100%;
+  width: 46%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#ops .key:nth-child(odd) {
+  background-color: #d34e47;
+}
+#ops .key:nth-child(even) {
+  background-color: #b52d26;
+}
+#ops .key:nth-child(3) {
+  background-color: #c43e37;
+  grid-row: 3/5;
+  grid-column: 1/2;
+}
