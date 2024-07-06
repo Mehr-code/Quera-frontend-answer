@@ -34,6 +34,7 @@ body {
   height: 28%;
   width: 100%;
   background-color: #eee;
+  color: #444;
   font-family: "DigitalNumbers";
   text-align: right;
   font-size: 3.5em;
@@ -58,10 +59,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-#nums .key:nth-child(odd) {
+#nums .key:nth-child(even) {
   background-color: #19676e;
 }
-#nums .key:nth-child(even) {
+#nums .key:nth-child(odd) {
   background-color: #095057;
 }
 #ops {
@@ -80,4 +81,7 @@ body {
   background-color: #c43e37;
   grid-row: 3/5;
   grid-column: 1/2;
+}
+#ops .key:nth-child(2) {
+  grid-row: 2/3;
 }
