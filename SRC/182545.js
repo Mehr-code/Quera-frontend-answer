@@ -3,21 +3,60 @@ function encrypt(str, n) {
 }
 
 function decrypt(str, n) {
+  // تبدیل رشته به آرایه
   let txt = str.split("");
+
+  // آرایه ای که قراره جواب ریخته شه توش
   const result = [];
+
+  // تمامی اعداد با محور بر حسب آ سر و کار دارند
   const pivot = "a".charCodeAt(0);
+
+  // اگر عدد بزرگ بود، فلگ تورو میشود
+  let flag = false;
+
+  // بررسی تمامی اعداد وارد شده در قالب آرایه
   txt.forEach((element) => {
-    if (element === element.toLowerCase()) {
+    // اگر عنصر مورد بررسی خالی بود، همون وارد بشه
+    if (element === " ") {
+      result.push(element);
+    } else {
+      // عنصر اگر بزرگ بود باید کوچک بشه و در نهایت باز بزرگ بشود
+      if (element === element.toUpperCase()) {
+        flag = true;
+        element = element.toLowerCase();
+      }
+      // عدد عنصر در بازه ی 0 تا 25
       let number = element.charCodeAt(0) - pivot;
-      console.log(number);
-      number = Math.abs(number - n) % 26;
-      console.log(number);
-      result.push(String.fromCharCode(number + pivot));
+
+      // عدد را شیفت میدهیم
+      number -= n;
+
+      // اگر عدد منفی شد باید چرخشی طور شیفت بدهد
+      while (number < 0) {
+        number += 26;
+      }
+
+      // عدد را باز به کاراکتر تبدیل میکنیم
+      let char = String.fromCharCode(number + pivot);
+
+      // اگر عدد بزرگ بود، به بزرگ باز تبدیل میشود
+      if (flag) {
+        char = char.toUpperCase();
+      }
+      // عنصر تبدیل شده در آرایه نتیجه ریخته میشود
+      result.push(char);
+
+      // فلگ به پیش فرض خود بر میگردد
+      flag = false;
     }
   });
-  console.log(result);
+
+  // تبدیل آرایه نهایی به رشته
+  return result.join("");
 }
 
-decrypt("b", 20);
+console.log(decrypt("Byffi Qilfx", 20));
 
 // export { encrypt, decrypt };
+// ByffiQilfx
