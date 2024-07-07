@@ -167,5 +167,13 @@
     <td><a href='https://quera.org/problemset/15683'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/15683.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>182545</td>
+    <td>رمز نگاری</td>
+    <td><a href='https://quera.org/problemset/182545'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182545.js'>جواب</a></td>
+  </tr>
+
+  
   
 </table>
