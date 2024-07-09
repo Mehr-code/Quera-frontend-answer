@@ -24,9 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add event listeners to all horizontal lines
   const horizontalLines = document.querySelectorAll(".horizontal_line");
+
   horizontalLines.forEach((line, index) => {
     line.addEventListener("click", () =>
       handleLineClick(line, "horizontal", index)
+    );
+
+    line.addEventListener("mouseenter", () =>
+      handleMouseEnter(line, "horizontal", index)
+    );
+    line.addEventListener("mouseleave", () =>
+      handleMouseLeave(line, "horizontal", index)
     );
   });
 
@@ -63,7 +71,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     updateStatus();
   }
+  function handleMouseEnter(line, type, index) {
+    let i = 0;
+    while (index > i * 7) {
+      i++;
+    }
+    const gruop = i;
+    index = index % 7;
+    if (type === "horizontal") {
+      if (!horizontalLines[gruop][index]) {
+        line.classList.add(`${currentPlayer}`);
+      }
+    } else if (type === "vertical") {
+      if (!verticalLines[gruop][index]) {
+        line.classList.add(`${currentPlayer}`);
+      }
+    }
 
+    updateStatus();
+  }
+
+  function handleMouseLeave(line, type, index) {
+    let i = 0;
+    while (index > i * 7) {
+      i++;
+    }
+    const gruop = i;
+    index = index % 7;
+    if (type === "horizontal") {
+      if (!horizontalLines[gruop][index]) {
+        line.classList.remove(`${currentPlayer}`);
+      }
+    } else if (type === "vertical") {
+      if (!verticalLines[gruop][index]) {
+        line.classList.remove(`${currentPlayer}`);
+      }
+    }
+
+    updateStatus();
+  }
   function checkForBoxCompletion(type, index) {
     // Check for box completion logic based on the line clicked (horizontal or vertical)
     // and the index of the line.
