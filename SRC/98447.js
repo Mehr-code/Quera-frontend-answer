@@ -46,22 +46,27 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 
-  function handleLineClick(line, type, index) {
+  function locLine(index) {
     let i = 0;
     while (index > i * 7) {
       i++;
     }
-    const gruop = i;
+    let gruop = i;
     index = index % 7;
+    return [index, gruop];
+  }
+
+  function handleLineClick(line, type, index) {
+    let [num, gruop] = locLine(index);
     if (type === "horizontal") {
-      if (!horizontalLines[gruop][index]) {
+      if (!horizontalLines[gruop][num]) {
         line.classList.add(`${currentPlayer}`);
-        horizontalLines[gruop][index] = true;
+        horizontalLines[gruop][num] = true;
       }
     } else if (type === "vertical") {
-      if (!verticalLines[gruop][index]) {
+      if (!verticalLines[gruop][num]) {
         line.classList.add(`${currentPlayer}`);
-        verticalLines[gruop][index] = true;
+        verticalLines[gruop][num] = true;
       }
     }
 
@@ -72,18 +77,13 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStatus();
   }
   function handleMouseEnter(line, type, index) {
-    let i = 0;
-    while (index > i * 7) {
-      i++;
-    }
-    const gruop = i;
-    index = index % 7;
+    let [num, gruop] = locLine(index);
     if (type === "horizontal") {
-      if (!horizontalLines[gruop][index]) {
+      if (!horizontalLines[gruop][num]) {
         line.classList.add(`${currentPlayer}`);
       }
     } else if (type === "vertical") {
-      if (!verticalLines[gruop][index]) {
+      if (!verticalLines[gruop][num]) {
         line.classList.add(`${currentPlayer}`);
       }
     }
@@ -92,18 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleMouseLeave(line, type, index) {
-    let i = 0;
-    while (index > i * 7) {
-      i++;
-    }
-    const gruop = i;
-    index = index % 7;
+    let [num, gruop] = locLine(index);
     if (type === "horizontal") {
-      if (!horizontalLines[gruop][index]) {
+      if (!horizontalLines[gruop][num]) {
         line.classList.remove(`${currentPlayer}`);
       }
     } else if (type === "vertical") {
-      if (!verticalLines[gruop][index]) {
+      if (!verticalLines[gruop][num]) {
         line.classList.remove(`${currentPlayer}`);
       }
     }
