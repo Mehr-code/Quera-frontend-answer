@@ -1,21 +1,3 @@
-// // نمایش خط های افقی با آرایه
-// let horizontalLines = [
-//   [false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false],
-// ];
-
-// // نمایش خط های عمودی با آرایه
-// let verticalLines = [
-//   [false, false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false, false],
-//   [false, false, false, false, false, false, false, false],
-// ];
-
 // استفاده از دام کانتت لودد جای لود که باعث سریع تر شدن کار میشود
 document.addEventListener("DOMContentLoaded", () => {
   // نمایش خط های افقی با آرایه
@@ -83,30 +65,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // تابع لوکیشن خط بر اساس ایندکس که ردیف و شماره خط را میبابد
-  function locLine(index) {
-    let i = 0;
-    while (index > i * 7) {
-      i++;
+  function locLine(index, type) {
+    if (type === "horizontal") {
+      const row = Math.floor(index / 7);
+      index = index % 7;
+      return [index, row];
+    } else if (type === "vertical") {
+      const row = Math.floor(index / 8);
+      index = index % 8;
+      return [index, row];
     }
-    let row = i;
-    index = index % 7;
-    return [index, row];
   }
 
   // این تابع خطی که کلیک شده را بررسی میکند
   function handleLineClick(line, type, index) {
     // لوکیشن خط را پیدا میکند
-    let [num, row] = locLine(index);
+    let [num, row] = locLine(index, type);
+
     // اگر خط افقی باشد
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         lineChanger(line, row, num);
+        horizontalArray[row][num] = true;
       }
     }
     // اگر خط عمودی باشد
     else if (type === "vertical") {
       if (!verticalArray[row][num]) {
         lineChanger(line, row, num);
+        verticalArray[row][num] = true;
       }
     }
 
@@ -117,10 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStatus();
   }
   function handleMouseEnter(line, type, index) {
-    let [num, row] = locLine(index);
+    let [num, row] = locLine(index, type);
 
     if (type === "horizontal") {
-      console.log(horizontalArray);
       if (!horizontalArray[row][num]) {
         line.classList.add(`${currentPlayer}`);
       }
@@ -134,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleMouseLeave(line, type, index) {
-    let [num, row] = locLine(index);
+    let [num, row] = locLine(index, type);
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         line.classList.remove(`${currentPlayer}`);
@@ -150,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function lineChanger(line, row, num) {
     line.classList.add(`${currentPlayer}`);
-    horizontalArray[row][num] = true;
   }
   function checkForBoxCompletion(type, index) {
     // Check for box completion logic based on the line clicked (horizontal or vertical)
