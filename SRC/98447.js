@@ -103,9 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     updateStatus();
   }
+  // تابع برای وقتی که موس روی خط آمد
   function handleMouseEnter(line, type, index) {
+    // لوکیشن خط شناسایی میشه
     let [num, row] = locLine(index, type);
-
+    // توابع برای عوض کردن رنگ خط ها
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         line.classList.add(`${currentPlayer}`);
@@ -120,7 +122,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleMouseLeave(line, type, index) {
+    // لوکیشن خط شناسایی میشه
     let [num, row] = locLine(index, type);
+
+    // توابع برای عوض کردن رنگ خط ها
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         line.classList.remove(`${currentPlayer}`);
@@ -134,7 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStatus();
   }
 
-  function lineChanger(line, row, num) {
+  // تابع عوض کردن رنگ خط
+  function lineChanger(line) {
     line.classList.add(`${currentPlayer}`);
   }
   function checkForBoxCompletion(type, index) {
