@@ -64,6 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 
+  function changePlayer() {
+    currentPlayer = currentPlayer === "blue" ? "red" : "blue";
+  }
+
   // تابع لوکیشن خط بر اساس ایندکس که ردیف و شماره خط را میبابد
   function locLine(index, type) {
     if (type === "horizontal") {
@@ -86,21 +90,21 @@ document.addEventListener("DOMContentLoaded", () => {
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         lineChanger(line, row, num);
-        horizontalArray[row][num] = `${currentPlayer === "blue" ? "X" : "O"}`;
+        horizontalArray[row][num] = true;
+        changePlayer();
       }
     }
     // اگر خط عمودی باشد
     else if (type === "vertical") {
       if (!verticalArray[row][num]) {
         lineChanger(line, row, num);
-        verticalArray[row][num] = `${currentPlayer === "blue" ? "X" : "O"}`;
+        verticalArray[row][num] = true;
+        changePlayer();
       }
+    } else {
+      return;
     }
 
-    const boxCompleted = checkForBoxCompletion(type, index);
-    if (!boxCompleted) {
-      currentPlayer = currentPlayer === "blue" ? "red" : "blue";
-    }
     updateStatus();
   }
   // تابع برای وقتی که موس روی خط آمد
@@ -143,23 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function lineChanger(line) {
     line.classList.add(`${currentPlayer}`);
   }
-  function checkForBoxCompletion(type, index) {
-    // Check for box completion logic based on the line clicked (horizontal or vertical)
-    // and the index of the line.
-    // This is a simplified version; you can expand it to match your specific game rules.
-
-    // Let's assume each box is identified by a set of 4 lines
-    // and you can check if those 4 lines are all active to determine if the box is completed.
-
-    // Return true if a box is completed, otherwise false.
-    // Update the color of the box based on the current player.
-
-    // For simplicity, we assume here that no box is completed.
-    return false;
-  }
 
   function updateStatus() {
     playerTurnElement.textContent = currentPlayer;
-    
   }
 });
