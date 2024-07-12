@@ -86,14 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (type === "horizontal") {
       if (!horizontalArray[row][num]) {
         lineChanger(line, row, num);
-        horizontalArray[row][num] = true;
+        horizontalArray[row][num] = `${currentPlayer === "blue" ? "X" : "O"}`;
       }
     }
     // اگر خط عمودی باشد
     else if (type === "vertical") {
       if (!verticalArray[row][num]) {
         lineChanger(line, row, num);
-        verticalArray[row][num] = true;
+        verticalArray[row][num] = `${currentPlayer === "blue" ? "X" : "O"}`;
       }
     }
 
@@ -160,5 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateStatus() {
     playerTurnElement.textContent = currentPlayer;
+    
   }
 });
