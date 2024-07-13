@@ -183,7 +183,7 @@
     <td>132237</td>
     <td>جابجایی</td>
     <td><a href='https://quera.org/problemset/132237'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/98447.js'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/132237.js'>جواب</a></td>
   </tr>
 
   
