@@ -58,6 +58,23 @@ allToTheRight.addEventListener("click", () => {
   if (leftList == false) {
     return;
   } else {
-    leftList.forEach();
+    allToTheRight.classList.add("disabled");
+    allToTheLeft.classList.remove("disabled");
+    Array.prototype.push.apply(rightList, leftList);
+    leftList = [];
+    clearDom();
+    renderDom(leftList, rightList);
+  }
+});
+allToTheLeft.addEventListener("click", () => {
+  if (rightList == false) {
+    return;
+  } else {
+    allToTheLeft.classList.add("disabled");
+    allToTheRight.classList.remove("disabled");
+    Array.prototype.push.apply(leftList, rightList);
+    rightList = [];
+    clearDom();
+    renderDom(leftList, rightList);
   }
 });
