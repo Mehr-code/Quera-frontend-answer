@@ -59,19 +59,34 @@ allToTheRight.addEventListener("click", () => {
     return;
   } else {
     allToTheRight.classList.add("disabled");
+    checkToRight.classList.add("disabled");
     allToTheLeft.classList.remove("disabled");
+    checkToLeft.classList.remove("disabled");
     Array.prototype.push.apply(rightList, leftList);
     leftList = [];
     clearDom();
     renderDom(leftList, rightList);
   }
 });
+
+checkToRight.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".left-side .box");
+  console.log(boxes);
+  boxes.forEach(function (el) {
+    if (el.firstElementChild.checked) {
+      console.log(el.firstElementChild.id);
+    }
+  });
+});
+
 allToTheLeft.addEventListener("click", () => {
   if (rightList == false) {
     return;
   } else {
     allToTheLeft.classList.add("disabled");
+    checkToLeft.classList.add("disabled");
     allToTheRight.classList.remove("disabled");
+    checkToRight.classList.remove("disabled");
     Array.prototype.push.apply(leftList, rightList);
     rightList = [];
     clearDom();
