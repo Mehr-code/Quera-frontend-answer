@@ -1,0 +1,118 @@
+/* do not change this code */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(70, 50, 13, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 70rem;
+  height: 70rem;
+}
+
+.container > img {
+  position: absolute;
+}
+
+.container > img:nth-child(1) {
+  top: 50rem;
+  left: 50rem;
+}
+
+.container > img:nth-child(2) {
+  top: -10rem;
+  left: 40rem;
+}
+
+.container > img:nth-child(3) {
+  top: 30rem;
+  left: 0;
+}
+
+.container > img:nth-child(4) {
+  top: 0rem;
+  left: -20rem;
+}
+
+/* write your code here */
+
+@keyframes animation1 {
+  50% {
+    top: 30rem;
+    left: 30rem;
+  }
+  100% {
+    top: 0%;
+    left: 2rem;
+  }
+}
+@keyframes animation2 {
+  50% {
+    top: -5rem;
+    left: 25rem;
+  }
+  100% {
+    top: 25.5rem;
+    left: 2rem;
+  }
+}
+
+@keyframes animation3 {
+  50% {
+    top: 15rem;
+    left: 15rem;
+  }
+  100% {
+    top: 0rem;
+    left: 32rem;
+  }
+}
+@keyframes animation4 {
+  50% {
+    top: 17rem;
+    left: 15rem;
+  }
+  100% {
+    top: 30.5rem;
+    left: 26.8rem;
+  }
+}
+
+img:first-child {
+  animation: animation1 3s;
+  animation-fill-mode: forwards;
+}
+img:nth-child(2) {
+  animation: animation2 3s;
+  animation-fill-mode: forwards;
+}
+img:nth-child(3) {
+  animation: animation3 3s;
+  animation-fill-mode: forwards;
+}
+img:last-child {
+  animation: animation4 3s;
+  animation-fill-mode: forwards;
+}
