@@ -190,7 +190,7 @@
     <td>236450</td>
     <td>هویت بمب گذار</td>
     <td><a href='https://quera.org/problemset/236450'>سوال</a></td>
-    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/236450.js'>جواب</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/236450.css'>جواب</a></td>
   </tr>
   
 </table>
