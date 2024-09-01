@@ -1,0 +1,24 @@
+nav {
+}
+
+a {
+  background-color: var(--color--nav-link-background);
+  color: var(--color--body-foreground);
+
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.2rem;
+
+  &:hover {
+    background-color: var(--color--nav-link-background--hover);
+  }
+}
+
+img {
+  float: left;
+  width: 40px;
+}
+
+p {
+  font-size: 8mm;
+}
