@@ -1,17 +1,25 @@
 nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 a {
+  flex-grow: 1;
+  flex-shrink: 1;
   background-color: var(--color--nav-link-background);
   color: var(--color--body-foreground);
 
   text-decoration: none;
-  display: inline-block;
   border-radius: 0.2rem;
 
   &:hover {
     background-color: var(--color--nav-link-background--hover);
   }
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 img {
