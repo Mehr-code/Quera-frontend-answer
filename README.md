@@ -198,5 +198,11 @@
     <td><a href='https://quera.org/problemset/182261'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/182261.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>265387</td>
+    <td>ستارگان آینده گلرنگ</td>
+    <td><a href='https://quera.org/problemset/265387'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/265387.css'>جواب</a></td>
+  </tr>
   
 </table>
