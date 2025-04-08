@@ -204,5 +204,11 @@
     <td><a href='https://quera.org/problemset/265387'>سوال</a></td>
     <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/265387.css'>جواب</a></td>
   </tr>
+  <tr>
+    <td>265385</td>
+    <td>انیمیشن دکمه</td>
+    <td><a href='https://quera.org/problemset/265385'>سوال</a></td>
+    <td><a href='https://github.com/Mehr-code/Quera-frontend-answer/blob/main/SRC/265385.js'>جواب</a></td>
+  </tr>
   
 </table>
